@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid #1acc10d0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    left: -40px;  /*125 posicao que encosta no cavalo*/
+    animation: pipe-animation 2s infinite linear ; 
+
+}
+
+.cavalo {
+    width: 135px;
+
+    position: absolute;
+    
+    margin-top: 325px;
+    bottom: none;
+
+}
+
+.grama {
+    
+   position: absolute;
+   bottom: 0;
+   width: 1500px;
+   height: 80px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+ 
+  @keyframes pipe-animation {
+    
+      0% {
+        left: 100%;
+        right: 100%;
+      }
+
+
+  }
+
+  @keyframes jump {
+    0% {
+        margin-top: 325px;
+    }
+   
+    50% {
+        margin-top: 232px;
+    }
+    60% {
+        margin-top: 232px;
+    }
+    80%{
+        margin-top: 229px;
+    }
+    100% {
+        margin-top: 232px;
+    }
+ }
+
+ .mensagem {
+    color: red;
+    text-align: center;
+    font-size: 80px;
+    font-family: Luminari, fantasy;
+    
+  }
+
+ 
